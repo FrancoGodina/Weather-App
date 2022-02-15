@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="weatherBox">
+            <div id="searchBox">
+                <input type="text" placeholder="Enter a desired location" id="searchField" value="">
+                <button type="button" id="searchButton" onClick="getWeather()">Search</button><br>
+            </div>
+            <h1 id="place"></h1>
+            <h2 id="temperature"></h2>
+            <p id="description"></p>
+            <img id="weatherImage">
+            <p id="humidity"></p>
+        
+        </div>
+    </div>
+    
+</body>
+</html>
