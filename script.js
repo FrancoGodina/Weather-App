@@ -23,23 +23,23 @@ async function getWeather(){
         let whatWeather = function whatWeather() {
             if (weatherData.weather[0].main === "Clear") {
                 let img = document.getElementById("weatherImage");
-                img.src = "/images/sunny.png"
+                img.src = "images/sunny.jpg"
             }
             else if (weatherData.weather[0].main === "Rain") {
                 let img = document.getElementById("weatherImage");
-                img.src = "/images/rain_light.png"
+                img.src = "images/rain_light.jpg"
             }
             else if (weatherData.weather[0].main === "Thunderstorm") {
                 let img = document.getElementById("weatherImage");
-                img.src = "/images/electric storm.png"
+                img.src = "images/electric storm.jpg"
             }
             else if (weatherData.weather[0].main === "Clouds") {
                 let img = document.getElementById("weatherImage");
-                img.src = "/images/cloudy.png"
+                img.src = "images/cloudy.jpg"
             }
             else if (weatherData.weather[0].main === "Snow") {
                 let img = document.getElementById("weatherImage");
-                img.src = "/images/snow.png";
+                img.src = "images/snow.jpg";
             }
         }
 
@@ -48,9 +48,6 @@ async function getWeather(){
         writeTemp();
         writeHum();
         writeDescription();
-    
-        console.log(weatherData)
-        console.log(weatherData.weather[0].main)
     }
     catch (err) {
         alert(err);
