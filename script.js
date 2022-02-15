@@ -3,7 +3,7 @@ async function getWeather(){
         const search = document.querySelector("#searchField");
         const btn = document.querySelector("button")
 
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=` + search.value + `&appid=cc7ca1a348334bcda596941ae0e82f6c`, {mode: "cors"})
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=` + search.value + `&appid=cc7ca1a348334bcda596941ae0e82f6c`, {mode: "cors"})
 
         const weatherData = await response.json()
 
